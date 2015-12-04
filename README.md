@@ -1,6 +1,10 @@
 # fp-growth-java
 A simple implementation of FP-growth algorithm in Java
 
+### How to use
+...
+
+### More about FP-growth
 
 For more information about the algorithm take a look here:
 
