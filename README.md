@@ -2,7 +2,13 @@
 A simple implementation of FP-growth algorithm in Java
 
 ### How to use
-...
+* Clone the repository to your computer
+* Install Maven
+* Run 'mvn clean install' in the base directory
+* Import code into Eclipse or whatever you like to do :-)
+
+### Todo
+* The implementation only works with simple CSV like files. I am going to implement some kind of DataSource class ...
 
 ### More about FP-growth
 
