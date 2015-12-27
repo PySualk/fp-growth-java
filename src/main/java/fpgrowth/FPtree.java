@@ -1,10 +1,9 @@
 package fpgrowth;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
-public class FPtree implements Comparator<FPtree> {
+public class FPtree {
 
 	private String item;
 	private List<FPtree> children;
@@ -73,13 +72,4 @@ public class FPtree implements Comparator<FPtree> {
 		return "FPtree[" + item + ":" + count + ", Children: " + children + "]";
 	}
 
-	@Override
-	public int compare(FPtree o1, FPtree o2) {
-		if (o1.count > o2.count)
-			return 1;
-		else if (o1.count < o2.count)
-			return -1;
-		else
-			return 0;
-	}
 }

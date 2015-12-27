@@ -39,7 +39,9 @@ public class FPgrowthTest {
 
 		Double minSupport = 0.2;
 		File exampleTransactions1 = new File("exampleTransactions1.csv");
-		Set<FrequentPattern> frequentPatterns = fpGrowth.findFrequentPattern(exampleTransactions1, minSupport);
+		DataSource dataSource = new SimpleCsvDataSource(exampleTransactions1, ",");
+		Set<FrequentPattern> frequentPatterns = fpGrowth.findFrequentPattern(
+				minSupport, dataSource);
 
 		HashSet<String> actual = new HashSet<>();
 		for (FrequentPattern fp : frequentPatterns) {
@@ -89,8 +91,10 @@ public class FPgrowthTest {
 		expectedPatterns.add(new FrequentPattern("e", 3, 0.3));
 
 		Double minSupport = 0.2;
-		File exampleTransactions1 = new File("exampleTransactions2.csv");
-		Set<FrequentPattern> frequentPatterns = fpGrowth.findFrequentPattern(exampleTransactions1, minSupport);
+		File exampleTransactions2 = new File("exampleTransactions2.csv");
+		DataSource dataSource = new SimpleCsvDataSource(exampleTransactions2, ",");
+		Set<FrequentPattern> frequentPatterns = fpGrowth.findFrequentPattern(
+				minSupport, dataSource);
 
 		HashSet<String> actual = new HashSet<>();
 		for (FrequentPattern fp : frequentPatterns) {
