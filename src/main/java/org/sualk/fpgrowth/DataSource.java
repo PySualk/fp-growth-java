@@ -1,4 +1,4 @@
-package fpgrowth;
+package org.sualk.fpgrowth;
 
 public interface DataSource {
 

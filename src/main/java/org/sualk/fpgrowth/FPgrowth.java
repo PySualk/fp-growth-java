@@ -1,4 +1,4 @@
-package fpgrowth;
+package org.sualk.fpgrowth;
 
 import java.util.ArrayList;
 import java.util.HashMap;

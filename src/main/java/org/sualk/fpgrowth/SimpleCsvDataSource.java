@@ -1,4 +1,4 @@
-package fpgrowth;
+package org.sualk.fpgrowth;
 
 import java.io.BufferedReader;
 import java.io.File;
