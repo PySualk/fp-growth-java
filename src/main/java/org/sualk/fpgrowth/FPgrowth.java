@@ -163,11 +163,11 @@ public class FPgrowth {
 	}
 
 	private void findFrequentPatterns() {
-		fpGrowthStep(this.fpTree, this.headerTable, this.frequentPatterns, "");
+		fpGrowthStep(this.headerTable, this.frequentPatterns, "");
 	}
 
-	private void fpGrowthStep(FPtree tree, Map<String, FPtree> headerTable,
-			Set<FrequentPattern> frequentPatterns, String base) {
+	private void fpGrowthStep(Map<String, FPtree> headerTable,
+                              Set<FrequentPattern> frequentPatterns, String base) {
 
 		for (String item : headerTable.keySet()) {
 			FPtree treeNode = headerTable.get(item);
@@ -290,7 +290,7 @@ public class FPgrowth {
 			log.debug("End Mining Rules for {}", currentPattern);
 
 			if (!conditionalTree.getChildren().isEmpty())
-				fpGrowthStep(conditionalTree, conditionalHeaderTable,
+				fpGrowthStep(conditionalHeaderTable,
 						frequentPatterns, currentPattern);
 		}
 	}
