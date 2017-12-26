@@ -1,11 +1,11 @@
 # fp-growth-java
-A simple implementation of FP-growth algorithm in Java
+An implementation of FP-growth algorithm in Java
 
 ### How to use
 * Clone the repository to your computer
 * Install Maven
 * Run 'mvn clean install' in the base directory
-* Import code into Eclipse or whatever you like to do :-)
+* Import code into your favorite IDE :-)
 * (Optional) Add some new data source by implementing the DataSource interface
 
 ### More about FP-growth
