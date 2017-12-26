@@ -2,10 +2,10 @@ package org.sualk.fpgrowth;
 
 public interface DataSource {
 
-	public Transaction next();
+	Transaction next();
 
-	public boolean hasNext();
+	boolean hasNext();
 
-	public void reset();
+	void reset();
 
 }

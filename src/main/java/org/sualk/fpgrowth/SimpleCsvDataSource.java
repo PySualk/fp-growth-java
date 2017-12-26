@@ -37,7 +37,7 @@ public class SimpleCsvDataSource implements DataSource {
 		Transaction t = new Transaction();
 
 		if (this.currentLine.length() == 0) {
-			String line = "";
+			String line;
 			try {
 				line = br.readLine();
 				if (line != null) {
@@ -60,7 +60,7 @@ public class SimpleCsvDataSource implements DataSource {
 
 	@Override
 	public boolean hasNext() {
-		String line = "";
+		String line;
 		try {
 			line = br.readLine();
 			if (line != null) {
@@ -76,7 +76,7 @@ public class SimpleCsvDataSource implements DataSource {
 		return true;
 	}
 
-	public void close() {
+	private void close() {
 		try {
 			br.close();
 		} catch (IOException e) {

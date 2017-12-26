@@ -181,7 +181,7 @@ public class FPgrowth {
 			log.debug("Start Mining Rules for {}", currentPattern);
 
 			// 1. Step: Conditional Pattern Base
-			Map<String, Integer> conditionalPatternBase = new HashMap<String, Integer>();
+			Map<String, Integer> conditionalPatternBase = new HashMap<>();
 
 			// Is the item frequent? (count >= minSupport)
 			Integer frequentItemsetCount = 0;

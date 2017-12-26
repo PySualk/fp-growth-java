@@ -14,7 +14,7 @@ public class CsvDataSourceTest {
 
 	@Before
 	public void setup() {
-		this.inputFile = new File("exampleTransactions1.csv");
+		this.inputFile = new File("src/main/resources/exampleTransactions1.csv");
 	}
 
 	@Test
